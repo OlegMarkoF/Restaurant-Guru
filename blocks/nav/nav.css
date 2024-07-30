@@ -1,0 +1,41 @@
+.nav {
+  width: 100%;
+  padding: 10px 0 10px;
+  margin: 0 auto;
+  background: rgba(66, 66, 66, 1);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+}
+
+.nav-content {
+  margin: 0 auto;
+  width: 65%;
+  max-width: 1440px;
+}
+
+.breadcrumb {
+  margin: 0;
+  width: 50%;
+}
+
+.breadcrumb-item {
+  color: white;
+}
+
+.breadcrumb-item:hover {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding: 0;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}

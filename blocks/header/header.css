@@ -1,0 +1,150 @@
+:root {
+  --font-roboto: Roboto;
+}
+
+.header {
+  margin: 0;
+  padding: 0 109px 0 128px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputs {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 0;
+  width: 23px;
+  height: 16.56px;
+  background: url(../../images/RF.svg);
+  background-repeat: no-repeat;
+  outline: none;
+  border-radius: 0;
+}
+
+input {
+  position: relative;
+  margin-left: 8px;
+  width: 100px;
+  outline: none;
+  height: 100%;
+}
+
+input::placeholder {
+  color: black;
+  font-family: var(--font-roboto);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.input-group,
+.form-control {
+  margin: 0;
+  padding: 0 14px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  font-family: var(--font-roboto);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.where {
+  border-left: none;
+}
+
+.place {
+  border-right: none;
+}
+
+.where::before {
+  content: "";
+  margin-right: 8px;
+  border-left: 1px solid rgba(207, 207, 207, 1);
+  width: 1px;
+  height: 28px;
+}
+
+.input-group-text {
+  height: 100%;
+  background: rgba(117, 64, 64, 1);
+  border: none;
+  border-radius: 10px;
+}
+
+.find {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.show {
+  border: none;
+}
+
+.dropdown-menu {
+  transform: translate(0px, -14px) !important;
+  width: 165px;
+  /* height: 112px; */
+  padding: 10px 18px 4px;
+  box-shadow: 0px 0px 8px 0px rgba(134, 135, 137, 0.25);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0 0px 10px 10px;
+}
+
+.dropdown-item {
+  padding: 11px 0;
+}
+
+.dropdown-item img {
+  margin-right: 15px;
+}
+
+.close-btn {
+  margin: 0 auto;
+  width: 100%;
+  background: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+.logo_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 14px 11px;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(213, 216, 218, 1)
+  }
+  .input-group {
+    display: none;
+  }
+  .header-logo {
+    margin: 0 auto;
+  }
+  .logo {
+    display: none;
+  }
+  .logo_mobile {
+    display: block;
+  }
+}
